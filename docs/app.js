@@ -28,5 +28,14 @@ function speakWord(word) {
   const utterance = new SpeechSynthesisUtterance(word);
   utterance.lang = "en-US";
   utterance.rate = 0.3;
+
+  // iOS向けの音声設定
+  const voices = synth.getVoices();
+  const englishVoice = voices.find((voice) => voice.lang.includes("en"));
+
+  if (englishVoice) {
+    utterance.voice = englishVoice;
+  }
+
   synth.speak(utterance);
 }
