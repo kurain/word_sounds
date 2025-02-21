@@ -1,0 +1,35 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-box {
+  margin: 20px 0;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#wordList {
+  list-style: none;
+  padding: 0;
+}
+
+.word-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.word-item:hover {
+  background-color: #e0e0e0;
+}
